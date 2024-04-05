@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25e2c409-0ed6-4716-bb4d-c3d028394a71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/graph/Graph.java" afterDir="false" />
+    <list default="true" id="25e2c409-0ed6-4716-bb4d-c3d028394a71" name="Changes" comment="广度优先搜索">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/KMP/VioLenceMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/binarySearchNoRecursion/BinarySearchNoRecur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/divideAndConquerAlgorithm/Hanoitower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/dynamic/KnapasackProblem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/atguigu/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/graph/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,52 +68,13 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.Graph">
-    <configuration name="AVLTreeDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.atguigu.AVL.AVLTreeDemo" />
+  <component name="RunManager" selected="Application.VioLenceMatch">
+    <configuration name="BinarySearchNoRecur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.atguigu.binarySearchNoRecursion.BinarySearchNoRecur" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.atguigu.AVL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AVLTreeDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.atguigu.AVL.AVLTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.atguigu.AVL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AVLTreeDemo (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.atguigu.AVL.AVLTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.atguigu.AVL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AVLTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.atguigu.AVL.AVLTreeDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.atguigu.AVL.*" />
+          <option name="PATTERN" value="org.atguigu.binarySearchNoRecursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,13 +95,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Hanoitower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.atguigu.divideAndConquerAlgorithm.Hanoitower" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.atguigu.divideAndConquerAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KnapasackProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.atguigu.dynamic.KnapasackProblem" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.atguigu.dynamic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VioLenceMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.atguigu.KMP.VioLenceMatch" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.atguigu.KMP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VioLenceMatch" />
+        <item itemvalue="Application.KnapasackProblem" />
+        <item itemvalue="Application.Hanoitower" />
+        <item itemvalue="Application.BinarySearchNoRecur" />
         <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.AVLTreeDemo (2)" />
-        <item itemvalue="Application.AVLTreeDemo (1)" />
-        <item itemvalue="Application.AVLTreeDemo" />
-        <item itemvalue="Application.AVLTreeDemo (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,8 +173,17 @@
       <workItem from="1711791188668" duration="605000" />
       <workItem from="1711969662179" duration="1842000" />
       <workItem from="1711973055918" duration="2486000" />
-      <workItem from="1712131887041" duration="1639000" />
+      <workItem from="1712131887041" duration="8040000" />
+      <workItem from="1712300685721" duration="4243000" />
     </task>
+    <task id="LOCAL-00001" summary="广度优先搜索">
+      <created>1712134203466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712134203466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,5 +199,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="广度优先搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="广度优先搜索" />
   </component>
 </project>

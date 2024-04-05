@@ -15,8 +15,9 @@ public class Graph {
 
     public static void main(String[] args) {
         //测试 图 是否创建
-        int n = 5;
-        String Vertexs[] = {"A", "B", "C", "D", "E"};
+        int n = 8;
+//        String Vertexs[] = {"A", "B", "C", "D", "E"};
+        String Vertexs[] = {"1", "2", "3", "4", "5", "6", "7", "8"};
         //创建图对象
         Graph graph = new Graph(n);
         //循环的添加顶点
@@ -24,11 +25,22 @@ public class Graph {
             graph.insertVertex(value);
         }
         //添加边
+//        graph.insertEdges(0, 1, 1);
+//        graph.insertEdges(0, 2, 1);
+//        graph.insertEdges(1, 2, 1);
+//        graph.insertEdges(1, 3, 1);
+//        graph.insertEdges(1, 4, 1);
+
+        //更新边的关系
         graph.insertEdges(0, 1, 1);
         graph.insertEdges(0, 2, 1);
-        graph.insertEdges(1, 2, 1);
         graph.insertEdges(1, 3, 1);
         graph.insertEdges(1, 4, 1);
+        graph.insertEdges(3, 7, 1);
+        graph.insertEdges(4, 7, 1);
+        graph.insertEdges(2, 5, 1);
+        graph.insertEdges(2, 6, 1);
+        graph.insertEdges(5, 6, 1);
 
         //显示邻接矩阵
         graph.showGraph();
@@ -74,7 +86,7 @@ public class Graph {
     //深度优先遍历算法
     public void dfs(boolean[] isVisited, int i) {
         //访问该结点
-        System.out.print(getValueByIndex(i) + 1 + "->");
+        System.out.print(getValueByIndex(i)+ "->");
         //将结点设置为已经访问
         isVisited[i] = true;
         //查找结点 i 的第一个邻接结点 w
@@ -189,6 +201,6 @@ public class Graph {
         edges[v1][v2] = weight;
         edges[v2][v1] = weight;
         numOfEdges++;
-        isVisited = new boolean[5];
+        isVisited = new boolean[vertexList.size()];
     }
 }
