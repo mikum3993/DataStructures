@@ -1,4 +1,4 @@
-package org.atguigu.divideAndConquerAlgorithm;
+package org.atguigu.Algorithm.divideAndConquerAlgorithm;
 
 public class Hanoitower {
     public static void main(String[] args) {

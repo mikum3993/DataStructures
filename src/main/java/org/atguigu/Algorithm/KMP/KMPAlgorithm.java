@@ -1,4 +1,4 @@
-package org.atguigu.KMP;
+package org.atguigu.Algorithm.KMP;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package org.atguigu.binarySearchNoRecursion;
+package org.atguigu.Algorithm.binarySearchNoRecursion;
 
 public class BinarySearchNoRecur {
     public static void main(String[] args) {

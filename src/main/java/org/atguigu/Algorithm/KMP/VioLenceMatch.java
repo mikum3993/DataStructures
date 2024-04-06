@@ -1,4 +1,4 @@
-package org.atguigu.KMP;
+package org.atguigu.Algorithm.KMP;
 
 //暴力匹配
 public class VioLenceMatch {

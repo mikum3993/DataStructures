@@ -1,4 +1,4 @@
-package org.atguigu.greedy;
+package org.atguigu.Algorithm.greedy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

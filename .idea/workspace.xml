@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25e2c409-0ed6-4716-bb4d-c3d028394a71" name="Changes" comment="更新">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/KMP/KMPAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/greedy/GreedyAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/prim/primAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/atguigu/Stack/polandNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/Stack/polandNotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/atguigu/dynamic/KnapasackProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/atguigu/dynamic/KnapasackProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,26 +63,13 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.GreedyAlgorithm">
+  <component name="RunManager" selected="Application.primAlgorithm">
     <configuration name="GreedyAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.atguigu.greedy.GreedyAlgorithm" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.atguigu.greedy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Hanoitower" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.atguigu.divideAndConquerAlgorithm.Hanoitower" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.atguigu.divideAndConquerAlgorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,13 +116,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="primAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.atguigu.prim.primAlgorithm" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.atguigu.prim.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.primAlgorithm" />
         <item itemvalue="Application.GreedyAlgorithm" />
         <item itemvalue="Application.KMPAlgorithm" />
         <item itemvalue="Application.VioLenceMatch" />
         <item itemvalue="Application.KnapasackProblem" />
-        <item itemvalue="Application.Hanoitower" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +170,8 @@
       <workItem from="1711973055918" duration="2486000" />
       <workItem from="1712131887041" duration="8040000" />
       <workItem from="1712300685721" duration="8180000" />
-      <workItem from="1712372524026" duration="4525000" />
+      <workItem from="1712372524026" duration="4550000" />
+      <workItem from="1712382696512" duration="3753000" />
     </task>
     <task id="LOCAL-00001" summary="广度优先搜索">
       <created>1712134203466</created>
@@ -189,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712311299061</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新">
+      <created>1712381883249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712381883249</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
