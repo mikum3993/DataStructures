@@ -1,5 +1,6 @@
 package org.atguigu.dynamic;
 
+//动态规划算法案例
 public class KnapasackProblem {
     public static void main(String[] args) {
         int[] w = {1, 4, 3};//物品的重量

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+//前缀、中缀、后缀
 public class polandNotation {
     public static void main(String[] args) {
         //先创建一个逆波兰表达式
