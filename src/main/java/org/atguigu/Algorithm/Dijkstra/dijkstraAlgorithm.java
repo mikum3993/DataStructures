@@ -18,7 +18,7 @@ public class dijkstraAlgorithm {
         matrix[5] = new int[]{N, N, N, 4, 5, N, 6};/*F*/
         matrix[6] = new int[]{2, 3, N, N, 4, 6, N};/*G*/
 
-        // 创建图 Grap
+        // 创建图 Graph
         Graph graph = new Graph(vertex, matrix);
         graph.showGraph();
         // 测试迪杰斯特拉
@@ -31,8 +31,8 @@ public class dijkstraAlgorithm {
 
 // 创建图
 class Graph {
-    private char[] vertex;// 顶点数组
-    private int[][] matrix;// 邻接矩阵
+    private final char[] vertex;// 顶点数组
+    private final int[][] matrix;// 邻接矩阵
     private VisitedVertex vv;// 已经访问的顶点集合
 
     // 构造器
@@ -112,7 +112,7 @@ class VisitedVertex {
      * 判断index顶点是否被访问过
      *
      * @param index
-     * @return 如果访问过，返回true   否则falue
+     * @return 如果访问过，返回true   否则false
      */
     public boolean in(int index) {
         return already_arr[index] == 1;
@@ -140,7 +140,7 @@ class VisitedVertex {
 
     /**
      * @param index
-     * @功能: 返回出发节点到index的距离
+     * 功能: 返回出发节点到index的距离
      */
     public int getDis(int index) {
         return dis[index];
