@@ -24,6 +24,7 @@ public class dijkstraAlgorithm {
         // 测试迪杰斯特拉
         System.out.println("--------------测试迪杰斯特拉------------------");
         graph.dsj(matrix.length - 1);
+        graph.showDijkstra();
 
     }
 }
@@ -47,22 +48,24 @@ class Graph {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Graph{" +
-                "<" + Arrays.toString(vertex) +
-                ", " + Arrays.toString(matrix) +
-                "> ";
+    // 显示迪杰斯特拉的结果
+    public void showDijkstra() {
+        vv.show();
     }
 
-    // 迪杰斯特拉算法实现
-
     /**
+     * 迪杰斯特拉算法实现
+     *
      * @param index 表示出发顶点对应的下标
      */
     public void dsj(int index) {
         this.vv = new VisitedVertex(vertex.length, index);
         update(index);// 更新index顶点到周围顶点的距离和前驱顶点
+
+        for (int i = 1; i < vertex.length; i++) {
+            index = vv.updateArr();// 选择并返回新的访问顶点
+            update(index);// 更新index顶点到周围顶点的距离和前驱顶点
+        }
     }
 
     // 更新index下标顶点到周围顶点你的距离和周围顶点的前驱节点,
@@ -101,7 +104,8 @@ class VisitedVertex {
         this.dis = new int[length];
         // 初始化dis数组
         Arrays.fill(dis, 65535);
-        this.dis[index] = 0;
+        this.already_arr[index] = 1;// 设置出发顶点被访问过 (1)
+        this.dis[index] = 0;// 设置出发顶点的访问距离为0
     }
 
     /**
@@ -142,4 +146,52 @@ class VisitedVertex {
         return dis[index];
     }
 
+    // 继续选择并返回新的访问顶点，比如 G 访问完后，就是 A 作为新的访问顶点(注：不是出发点)
+    public int updateArr() {
+        int min = 65535, index = 0;
+        for (int i = 0; i < already_arr.length; i++) {
+            if (already_arr[i] == 0 && dis[i] < min) {
+                min = dis[i];
+                index = i;
+            }
+        }
+        // 同时更新index 顶点被访问过
+        already_arr[index] = 1;
+        return index;
+    }
+
+    // 显示最后结果
+    // 即 将三个数组的情况输出
+    public void show() {
+
+        System.out.println("============================================");
+        // 输出already_arr
+        for (int i : already_arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        // 输出前驱最后的顶点
+        for (int i : pre_visited) {
+            System.out.print(i + " ");
+        }
+
+        System.out.println();
+        // 输出dis[]
+        for (int i : dis) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        // 美化最后的最短距离
+        char[] vetex = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+        int count = 0;
+        for (int i : dis) {
+            if (i != 65535) {
+                System.out.print(vetex[count] + "(" + i + "), ");
+            } else {
+                System.out.println("N");
+            }
+            count++;
+        }
+    }
 }
