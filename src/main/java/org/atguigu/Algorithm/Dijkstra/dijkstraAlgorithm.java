@@ -21,6 +21,63 @@ public class dijkstraAlgorithm {
         // 创建图 Grap
         Graph graph = new Graph(vertex, matrix);
         graph.showGraph();
+        // 测试迪杰斯特拉
+        System.out.println("--------------测试迪杰斯特拉------------------");
+        graph.dsj(matrix.length - 1);
+
+    }
+}
+
+// 创建图
+class Graph {
+    private char[] vertex;// 顶点数组
+    private int[][] matrix;// 邻接矩阵
+    private VisitedVertex vv;// 已经访问的顶点集合
+
+    // 构造器
+    public Graph(char[] vertex, int[][] matrix) {
+        this.vertex = vertex;
+        this.matrix = matrix;
+    }
+
+    // 显示图方法
+    public void showGraph() {
+        for (int[] link : matrix) {
+            System.out.println(Arrays.toString(link));
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Graph{" +
+                "<" + Arrays.toString(vertex) +
+                ", " + Arrays.toString(matrix) +
+                "> ";
+    }
+
+    // 迪杰斯特拉算法实现
+
+    /**
+     * @param index 表示出发顶点对应的下标
+     */
+    public void dsj(int index) {
+        this.vv = new VisitedVertex(vertex.length, index);
+        update(index);// 更新index顶点到周围顶点的距离和前驱顶点
+    }
+
+    // 更新index下标顶点到周围顶点你的距离和周围顶点的前驱节点,
+    private void update(int index) {
+        int len = 0;
+        // 根据遍历我们的邻接矩阵，matrix[index]
+        for (int i = 0; i < matrix[index].length; i++) {
+            // len 含义是: 出发顶点到index顶点的距离 + 从index顶点到i顶点的距离 的和
+            len = vv.getDis(index) + matrix[index][i];
+            // 如果i顶点没有被访问过，并且len 小于出发顶点到i顶点的距离，就需要更新
+            if (!vv.in(i) && len < vv.getDis(i)) {
+                vv.updatePre(i, index);// 更新i顶点的前驱为index顶点
+                vv.updateDis(i, len);// 更新出发顶点到i顶点的距离
+            }
+        }
     }
 }
 
@@ -64,34 +121,25 @@ class VisitedVertex {
      * @param len
      */
     public void updateDis(int index, int len) {
-
-
-    }
-}
-
-// 创建图
-class Graph {
-    private char[] vertex;// 顶点数组
-    private int[][] matrix;// 邻接矩阵
-
-    // 构造器
-    public Graph(char[] vertex, int[][] matrix) {
-        this.vertex = vertex;
-        this.matrix = matrix;
+        dis[index] = len;
     }
 
-    // 显示图方法
-    public void showGraph() {
-        for (int[] link : matrix) {
-            System.out.println(Arrays.toString(link));
-        }
+    /**
+     * 功能:  更新顶点的前驱为index节点
+     *
+     * @param pre
+     * @param index
+     */
+    public void updatePre(int pre, int index) {
+        pre_visited[pre] = index;
     }
 
-    @Override
-    public String toString() {
-        return "Graph{" +
-                "<" + Arrays.toString(vertex) +
-                ", " + Arrays.toString(matrix) +
-                "> ";
+    /**
+     * @param index
+     * @功能: 返回出发节点到index的距离
+     */
+    public int getDis(int index) {
+        return dis[index];
     }
+
 }
